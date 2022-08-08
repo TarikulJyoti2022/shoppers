@@ -1,0 +1,261 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Mukta', sans-serif;
+	overflow-x: hidden;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+header{
+	width:100%;
+}
+.topbar{
+	width: 100%;
+	background-color: white;
+	padding: 32px 0;
+	border-bottom: 4px solid #a6f3ed;
+}
+.topbar-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo a{
+	text-transform: uppercase;
+	color: #25262a;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	border: 2px solid black;
+	padding: 4px 14px;
+}
+.topbar-icon a{
+color: #868995;
+margin-left: 8px;
+}
+.topbar-icon a:hover{
+	color: #25262a;
+}
+.topbarsrch input{
+	font-size: 16px;
+	padding: 12px;
+	border: none;
+}
+.topbarsrch input:focus{
+	outline: none;
+	padding-left: 0;
+	transition: 0.5s;
+}
+.topbarsrch i{
+	color: #868995;
+}
+.main-menu li{
+	display: inline-block;
+	padding: 12px;
+	
+}
+.main-menu{
+	text-align: center;
+}
+..main-menu li a{
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+/*banner css*/
+.banner{
+	width: 100%;
+	background-image: url(../images/shoe.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	padding: 200px 0px;
+}
+.banner-content{
+	display: flex;
+}
+.left{
+	flex-basis: 60%;
+}
+.right{
+	flex-basis: 40%;
+}
+.right h1{
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	line-height: 35px;
+	margin-bottom: 20px;
+	/*text-transform: uppercase;*/
+}
+.right p{
+	font-size: 20px;
+	color: #333333;
+	font-weight: 300;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+.right button{
+	background-color: #7971ea;
+	padding: 12px 24px;
+	color: white;
+	border:none;
+	border-color: #7971ea;
+	letter-spacing: 1px;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 300;
+}
+.right button:hover{
+	box-shadow: 0 5px 20px -7px rgb(0 0 0 / 90%);
+	transform: translateY(-4px);
+	background-color: #5a50e5;
+	transition: 0.5s;
+}
+.about{
+	width: 100%;
+	padding: 60px 0;
+}
+.about-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 20px;
+}
+.icon i{
+	font-size: 42px;
+	color: #7971ea;
+}
+.catagory{
+	width: 100%;
+	padding: 100px 0;
+}
+.catagory-content{
+	display:grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 32px;
+}
+.fluid{
+	max-width: 100%;
+	height: auto;
+}
+.c-item{
+	position: relative;
+	overflow: hidden;
+}
+.c-item img{
+	z-index: -1;
+	transition: 0.8s;
+}
+.overlay{
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8)99%, rgba(0, 0, 0, 0.8)100%);
+}
+.c-item-content{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: tomato;
+	z-index: 9999;
+}
+.c-item:hover img{
+	transform: scale(1.1);
+	transition: 0.8s;
+}
+.product{
+	width:100%;
+	padding: 100px 0;   
+}
+.section-title{
+	text-align: center;
+}
+.line{
+	width: 50px;
+	height: 2px;
+	background-color: blue;
+	margin: 32px auto;
+}
+
+
+
+
+
+.bannercard{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.mainboxcard{
+	display: flex;
+}
+.left-card{
+	flex-basis: 50%;
+	margin-right: 70px;
+}
+.left-card img{
+max-width: 100%;
+height: auto;
+margin-left: 70px;
+margin-right: 70px;
+}
+.right-card{
+	flex-basis: 50%;
+	text-align: center;
+}
+
+
+.right-card span {
+	font-size: 40px;
+	color: #171f3c;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.right-card h1{
+	font-size: 45px;
+    color: #7971ea;
+    line-height: 46px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.right-card p{
+	color: #526375;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.card-btn{
+	background-color: #7971ea;
+	color: white;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.right-card a:hover{
+	background-color: skyblue;
